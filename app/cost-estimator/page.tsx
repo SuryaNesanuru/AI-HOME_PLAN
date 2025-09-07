@@ -8,7 +8,8 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+import dynamic from 'next/dynamic';
+const Progress = dynamic(() => import('@/components/ui/progress').then(m => m.Progress), { ssr: false });
 import { 
   Calculator, 
   Download, 

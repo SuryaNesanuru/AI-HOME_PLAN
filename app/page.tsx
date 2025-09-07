@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Home, Sparkles, Cuboid as Cube, Calculator, Users, Zap, ArrowRight, Play } from 'lucide-react';
+import { Home as HomeIcon, Sparkles, Cuboid as Cube, Calculator, Users, Zap, ArrowRight, Play } from 'lucide-react';
 import Link from 'next/link';
 import { ThemeToggle } from '@/components/theme-toggle';
 
@@ -36,7 +36,7 @@ const features = [
     description: 'Integrate solar panels, IoT devices, and energy efficiency analysis',
   },
   {
-    icon: Home,
+    icon: HomeIcon,
     title: 'Floor Plan Designer',
     description: 'Drag-and-drop rooms with instant square-foot calculations',
   },
@@ -52,7 +52,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <Home className="h-8 w-8 text-blue-600" />
+              <HomeIcon className="h-8 w-8 text-blue-600" />
               <span className="text-xl font-bold text-gray-900 dark:text-white">HousePlanner Pro</span>
             </div>
             <div className="flex items-center space-x-4">
@@ -171,7 +171,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <Home className="h-8 w-8 text-blue-600" />
+              <HomeIcon className="h-8 w-8 text-blue-600" />
               <span className="text-xl font-bold text-gray-900 dark:text-white">HousePlanner Pro</span>
             </div>
             <p className="text-gray-600 dark:text-gray-300">
